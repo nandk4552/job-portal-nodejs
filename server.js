@@ -31,25 +31,25 @@ dotenv.config();
 //mongodb connection
 connectDB();
 
-  //swagger API config
-  //swagger options
-  const options = {
-    definition: {
-      openapi: "3.0.0",
-      info: {
-        title: "Job Portal API",
-        description: "Node ExpressJs Job Portal Application",
-      },
-      servers: [
-        {
-          url: "http://localhost:8080",
-        },
-      ],
+//swagger API config
+//swagger options
+const options = {
+  definition: {
+    openapi: "3.0.0",
+    info: {
+      title: "Job Portal API",
+      description: "Node ExpressJs Job Portal Application",
     },
-    apis: ["./routes/*.js"],
-  };
-  //swagger spec
-  const spec = swaggerJSDoc(options);
+    servers: [
+      {
+        url: "http://localhost:8080",
+      },
+    ],
+  },
+  apis: ["./routes/*.js"],
+};
+//swagger spec
+const spec = swaggerJSDoc(options);
 
 // rest object
 const app = express();
@@ -84,8 +84,8 @@ const PORT = process.env.PORT || 8080;
 
 //listen
 app.listen(PORT, () => {
-  // console.log(
-  //   `Node Server Running in ${process.env.DEV_MODE} Mode on port ${PORT}`.bgCyan
-  //     .white
-  // );
+  console.log(
+    `Node Server Running in ${process.env.DEV_MODE} Mode on port ${PORT}`.bgCyan
+      .white
+  );
 });
