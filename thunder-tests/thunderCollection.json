@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "373dcb04-4b32-41c7-95f6-5f4183953af2",
+    "colName": "Job-portal",
+    "created": "2023-05-25T10:58:57.015Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "02104dea-ab02-4ee6-bbb0-3a33d078009f",
+        "name": "user",
+        "containerId": "",
+        "created": "2023-05-25T15:28:02.159Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "568a97e2-f565-4c0c-bc00-6a78bece1d0c",
+        "name": "jobs",
+        "containerId": "",
+        "created": "2023-05-26T13:07:12.112Z",
+        "sortNum": 20000
+      }
+    ]
+  }
+]

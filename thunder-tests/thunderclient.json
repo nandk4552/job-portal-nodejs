@@ -1,0 +1,238 @@
+[
+  {
+    "_id": "70e7f7c0-4372-456c-8e3b-cecdb0af295b",
+    "colId": "373dcb04-4b32-41c7-95f6-5f4183953af2",
+    "containerId": "",
+    "name": "POST test-post",
+    "url": "http://localhost:8080/api/v1/test/test-post",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-05-25T10:59:14.072Z",
+    "modified": "2023-05-26T08:18:17.376Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDcwNjY5NjdiMzE0YmJhMTlhODc4ZDkiLCJpYXQiOjE2ODUwODkwMTAsImV4cCI6MTY4NTE3NTQxMH0.2wXiZm-oqgd7cfAjiSNazayONAKcjIYodV9I7xFaV0E"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"kishore\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b9ce441b-500d-448a-b5c9-5e0c603c70fa",
+    "colId": "373dcb04-4b32-41c7-95f6-5f4183953af2",
+    "containerId": "02104dea-ab02-4ee6-bbb0-3a33d078009f",
+    "name": "register",
+    "url": "http://localhost:8080/api/v1/auth/register",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-05-25T15:28:12.374Z",
+    "modified": "2023-05-26T13:40:55.671Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"user\",\n  \"email\": \"user@user.com\",\n  \"password\": \"123456\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "188e4c14-47f2-4628-bdba-2c9396fb2e63",
+    "colId": "373dcb04-4b32-41c7-95f6-5f4183953af2",
+    "containerId": "02104dea-ab02-4ee6-bbb0-3a33d078009f",
+    "name": "login",
+    "url": "http://localhost:8080/api/v1/auth/login",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-05-26T07:52:09.374Z",
+    "modified": "2023-05-26T22:03:42.222Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": ".eyJ1c2VySWQiOiI2NDcwNjY5NjdiMzE0YmJhMTlhODc4ZDkiLCJpYXQiOjE2ODUwODg5ODYsImV4cCI6MTY4NTE3NTM4Nn0.HK_IgsLxsNLXlHlfkb7tomKRMmzK1Dlf9bhHV7NAf8k"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\": \"admin@admin.com\",\n  \"password\": \"123456\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "42c16ea2-8473-4a63-bd4d-3d507cce6ed1",
+    "colId": "373dcb04-4b32-41c7-95f6-5f4183953af2",
+    "containerId": "02104dea-ab02-4ee6-bbb0-3a33d078009f",
+    "name": "update user",
+    "url": "http://localhost:8080/api/v1/user/update-user",
+    "method": "PUT",
+    "sortNum": 25000,
+    "created": "2023-05-26T08:33:33.052Z",
+    "modified": "2023-05-26T08:37:43.082Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDcwNjY5NjdiMzE0YmJhMTlhODc4ZDkiLCJpYXQiOjE2ODUwOTAyNDMsImV4cCI6MTY4NTE3NjY0M30.1TIptG4Apiq7tDz9RPZljir3DMBu8seZbsoiFuINmik"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"user\",\n  \"lastName\": \"Super\",\n  \"email\": \"admin@admin.com\",\n  \"location\": \"Hyderabad RR DIST\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "3b8207f2-5d0e-48f1-8877-cd8e8e82d5ee",
+    "colId": "373dcb04-4b32-41c7-95f6-5f4183953af2",
+    "containerId": "568a97e2-f565-4c0c-bc00-6a78bece1d0c",
+    "name": "create job",
+    "url": "http://localhost:8080/api/v1/job/create-job",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-05-26T13:07:28.737Z",
+    "modified": "2023-05-26T13:19:09.972Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDcwNjY5NjdiMzE0YmJhMTlhODc4ZDkiLCJpYXQiOjE2ODUwOTAyNDMsImV4cCI6MTY4NTE3NjY0M30.1TIptG4Apiq7tDz9RPZljir3DMBu8seZbsoiFuINmik"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"company\": \"Infosys\",\n  \"position\": \"front-end developer\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "8367da1d-5ee3-4ec7-8e95-ae8dfb3a6ca1",
+    "colId": "373dcb04-4b32-41c7-95f6-5f4183953af2",
+    "containerId": "568a97e2-f565-4c0c-bc00-6a78bece1d0c",
+    "name": "get all jobs",
+    "url": "http://localhost:8080/api/v1/job/get-jobs?page=3&limit=30",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-05-26T13:17:06.869Z",
+    "modified": "2023-05-26T21:43:48.788Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDcwNjY5NjdiMzE0YmJhMTlhODc4ZDkiLCJpYXQiOjE2ODUwOTAyNDMsImV4cCI6MTY4NTE3NjY0M30.1TIptG4Apiq7tDz9RPZljir3DMBu8seZbsoiFuINmik"
+      }
+    ],
+    "params": [
+      {
+        "name": "status",
+        "value": "interview",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "workType",
+        "value": "internship",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "search",
+        "value": "design",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "sort",
+        "value": "z-a",
+        "isDisabled": true,
+        "isPath": false
+      },
+      {
+        "name": "page",
+        "value": "3",
+        "isPath": false
+      },
+      {
+        "name": "limit",
+        "value": "30",
+        "isPath": false
+      }
+    ],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"company\": \"Google\",\n  \"position\": \"Software Dev Engineer\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "262fec38-e258-447c-be28-b1c8caa240ec",
+    "colId": "373dcb04-4b32-41c7-95f6-5f4183953af2",
+    "containerId": "568a97e2-f565-4c0c-bc00-6a78bece1d0c",
+    "name": "update job ",
+    "url": "http://localhost:8080/api/v1/job/update-job/6470b1cd49a97c0ffc56630f",
+    "method": "PATCH",
+    "sortNum": 35000,
+    "created": "2023-05-26T13:33:10.607Z",
+    "modified": "2023-05-26T13:46:43.130Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDcwNjY5NjdiMzE0YmJhMTlhODc4ZDkiLCJpYXQiOjE2ODUwOTAyNDMsImV4cCI6MTY4NTE3NjY0M30.1TIptG4Apiq7tDz9RPZljir3DMBu8seZbsoiFuINmik"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"company\": \"TCS\",\n  \"position\": \"full stack web developer\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b437fc93-2689-4ab1-a3fe-493d53e4e0dc",
+    "colId": "373dcb04-4b32-41c7-95f6-5f4183953af2",
+    "containerId": "568a97e2-f565-4c0c-bc00-6a78bece1d0c",
+    "name": "delete job  ",
+    "url": "http://localhost:8080/api/v1/job/delete-job/6470b1cd49a97c0ffc56630f",
+    "method": "DELETE",
+    "sortNum": 37500,
+    "created": "2023-05-26T13:49:09.862Z",
+    "modified": "2023-05-26T13:49:47.668Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDcwNjY5NjdiMzE0YmJhMTlhODc4ZDkiLCJpYXQiOjE2ODUwOTAyNDMsImV4cCI6MTY4NTE3NjY0M30.1TIptG4Apiq7tDz9RPZljir3DMBu8seZbsoiFuINmik"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "0031dd65-b57b-429e-9758-371c08e5e1f5",
+    "colId": "373dcb04-4b32-41c7-95f6-5f4183953af2",
+    "containerId": "568a97e2-f565-4c0c-bc00-6a78bece1d0c",
+    "name": "job stats",
+    "url": "http://localhost:8080/api/v1/job/job-stats",
+    "method": "GET",
+    "sortNum": 32500,
+    "created": "2023-05-26T15:20:30.610Z",
+    "modified": "2023-05-26T17:01:23.125Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDcwNjY5NjdiMzE0YmJhMTlhODc4ZDkiLCJpYXQiOjE2ODUxMTkyMzksImV4cCI6MTY4NTIwNTYzOX0.52Tsgrin6ohrG7aGSwcDnAoCDidV-JAWVUx7JSApFv8"
+      }
+    ],
+    "params": [],
+    "tests": []
+  }
+]
